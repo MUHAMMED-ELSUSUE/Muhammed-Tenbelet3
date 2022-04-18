@@ -505,7 +505,7 @@ header .mega-menu .links li a i{
 .articles .container .box .info i{
     color: var(--min-color);
 }
-.articles .container .box:hover .info i{
+.articles .container .box:hover .info .right{
     animation: moving-arrow .6s linear infinite;
 }
 
@@ -1744,8 +1744,8 @@ footer .container .box  .text{
     max-width: 100%;
 }
 
-footer .container .box .links{
-
+footer .container .box .links .right{
+    animation: moving-arrow .6s linear infinite;
 }
 footer .container .box .links li{
     padding: 6px;
@@ -1830,6 +1830,8 @@ footer  .copyright span:nth-child(2){
     font-size: 19px;
     font-weight: bold;
 }
+
+
 /* end footer */
 
 /* start animation */
