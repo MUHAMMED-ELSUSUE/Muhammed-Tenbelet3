@@ -204,13 +204,19 @@ header .main-nav{
     }
 
 }
-header .main-nav li .mega-menu{
 
-}
 header .main-nav > li:hover .mega-menu{
  
      display: flex;
     top: calc(100% + 1px);
+    transition: var(--tra-transition);
+
+}
+@media (max-width:767px){
+    header .main-nav > li:hover .mega-menu{
+        transition: var(--tra-transition);
+        display: flex;
+    }
 
 }
 header .main-nav > li > a{
@@ -272,12 +278,14 @@ header .mega-menu{
     border-bottom: 3px solid var(--min-color);
     width: 100%;
     z-index: -1;
+   
     display: flex;
     gap: 40px;
     top: calc(100% + 50px );
-     display: none;
-    transition: top var(--tra-transition), opacity var(--tra-transition);
-
+    transition: top var(--tra-transition) ; 
+    transition: var(--tra-transition);
+    display: none;
+ 
 
   
    
