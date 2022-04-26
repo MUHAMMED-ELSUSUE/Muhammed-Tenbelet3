@@ -157,6 +157,10 @@ header{
     -webkit-box-shadow:0 0 10px #ddd;
     -moz-box-shadow: 0 0 10 #ddd;
     box-shadow: 0 0 10px #ddd;
+    position: sticky;
+    top: 0;
+    background-color: rgb(255 255 255 / 80%);
+    z-index: 2;
    
 }
 header .container {
@@ -164,6 +168,11 @@ header .container {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+}
+@media (max-width:767px){
+    header .container{
+        padding-left: 0;
+    }
 }
 header .logo{
     font-weight: 600;
