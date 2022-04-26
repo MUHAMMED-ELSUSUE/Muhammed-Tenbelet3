@@ -196,6 +196,7 @@ header .logo{
 }
 header .main-nav{
     display: flex;
+  
 }
 @media (max-width:767px){
     header .main-nav{
@@ -203,9 +204,12 @@ header .main-nav{
     }
 
 }
+header .main-nav li .mega-menu{
+
+}
 header .main-nav > li:hover .mega-menu{
-    opacity: 1;
-    z-index: 3;
+ 
+     display: flex;
     top: calc(100% + 1px);
 
 }
@@ -271,7 +275,7 @@ header .mega-menu{
     display: flex;
     gap: 40px;
     top: calc(100% + 50px );
-    opacity: 0;
+     display: none;
     transition: top var(--tra-transition), opacity var(--tra-transition);
 
 
